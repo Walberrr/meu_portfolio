@@ -1,0 +1,32 @@
+.header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;  
+    box-sizing: border-box;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    padding-right: 20px; 
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav .nav-link {
+    color: #ce2c2c;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
