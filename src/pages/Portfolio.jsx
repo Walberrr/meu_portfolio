@@ -60,11 +60,13 @@ function Portfolio() {
         <a
           href="https://www.linkedin.com/in/walbert-pereira-359714181"
           target="_blank"
+          
           rel="noopener noreferrer"
           className="linkedin-link"
         >
           Meu LinkedIn
         </a>
+
       </div>
     </div>
   );
