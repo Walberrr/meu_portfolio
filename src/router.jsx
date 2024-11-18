@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import BullsAndCows from "./pages/BullsAndCows";
+import Movies from "./pages/Movies"; 
 
 const router = createBrowserRouter([
   {
@@ -10,9 +10,10 @@ const router = createBrowserRouter([
     element: <Layout />,
     
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Portfolio /> }, // Torne a página Portfolio a inicial
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/bulls-and-cows", element: <BullsAndCows /> },
+      { path: "/movies", element: <Movies /> },
     ],
   },
 ]);

@@ -1,10 +1,11 @@
 import React from "react";
-import "./Footer.css"; 
+import "./Footer.css"; // Importando o arquivo de estilos
 
 function Footer() {
   return (
     <footer className="footer">
-      © 2024 - Meu Currículo / Portfólio. Todos os direitos reservados.
+      <a href="mailto:walbepereira@gmail.com" className="footer-email">Entre em contato</a>
+      <p>© 2024 - Walbert Pereira de Lima. Todos os direitos reservados.</p>
     </footer>
   );
 }
