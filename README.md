@@ -22,7 +22,7 @@ Este projeto é meu portfólio pessoal, criado para demonstrar minhas habilidade
 - **Vite**: Ferramenta de build rápida para desenvolvimento de React.
 - **JavaScript**: Usado para implementar a lógica do Jogo Senha.
 - **CSS**: Para estilização da interface com um design clean e responsivo.
-- **Spotify API**: Para exibir músicas e playlists favoritas no site.
+- **OMDb API **: Para exibir filmes, seus títulos e ano de lançamento.
 
 ---
 
