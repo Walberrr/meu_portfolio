@@ -1,63 +1,55 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './Movies.css';  // Importando o arquivo CSS
 
 function Movies() {
-  const [searchTerm, setSearchTerm] = useState(""); // Armazena o termo de busca
-  const [movies, setMovies] = useState([]); // Armazena os filmes retornados pela API
-  const [loading, setLoading] = useState(false); // Indica se a busca está em andamento
+  const [searchTerm, setSearchTerm] = useState(""); 
+  const [movies, setMovies] = useState([]); 
+  const [loading, setLoading] = useState(false); 
 
-  // Função que faz a busca de filmes
   const searchMovies = async () => {
-    if (!searchTerm) return; // Não faz a busca se o campo estiver vazio
+    if (!searchTerm) 
 
-    setLoading(true); // Inicia o carregamento
+    setLoading(true); 
 
     try {
       const response = await axios.get(`https://www.omdbapi.com/?s=${searchTerm}&apikey=ab1c133`);
       
       if (response.data.Response === "True") {
-        setMovies(response.data.Search); // Atualiza os filmes encontrados
+        setMovies(response.data.Search); 
       } else {
         alert("Nenhum filme encontrado");
-        setMovies([]); // Limpa a lista de filmes
+        setMovies([]); 
       }
     } catch (error) {
       console.error("Erro ao buscar filmes:", error);
       alert("Erro ao buscar filmes.");
     }
 
-    setLoading(false); // Fim do carregamento
+    setLoading(false); 
   };
 
   return (
-    <div className="movies-container">
-      <h1 className="movies-title">Busca de Filmes</h1>
-      <div className="search-box">
-        <input
-          type="text"
-          placeholder="Pesquise por filmes..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
-        <button onClick={searchMovies} className="search-button">
-          Buscar
-        </button>
-      </div>
+    <div className="movies-container" style={{ textAlign: "center", padding: "20px" }}>
+      <h1>Busca de Filmes</h1>
+      <input
+        type="text"
+        placeholder="Pesquise por filmes..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        style={{ padding: "10px", width: "300px", marginBottom: "20px" }}
+      />
+      <button onClick={searchMovies} style={{ padding: "10px 20px", fontSize: "16px" }}>
+        Buscar
+      </button>
 
-      {loading && <p className="loading-text">Carregando...</p>}
+      {loading && <p>Carregando...</p>}
 
-      <div className="movies-list">
+      <div className="movies-list" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {movies.length > 0 && movies.map((movie) => (
-          <div key={movie.imdbID} className="movie-card">
-            <img
-              src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/200x300"}
-              alt={movie.Title}
-              className="movie-poster"
-            />
-            <h3 className="movie-title">{movie.Title}</h3>
-            <p className="movie-year">{movie.Year}</p>
+          <div key={movie.imdbID} style={{ margin: "20px", textAlign: "center" }}>
+            <img src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/200x300"} alt={movie.Title} style={{ width: "200px", height: "300px" }} />
+            <h3>{movie.Title}</h3>
+            <p>{movie.Year}</p>
           </div>
         ))}
       </div>
