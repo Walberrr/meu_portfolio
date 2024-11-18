@@ -26,11 +26,11 @@ Este projeto é meu portfólio pessoal, criado para demonstrar minhas habilidade
 
 ---
 
-## 🔥 Funcionalidades
+## 🔥 Páginas
 
-- **Home Page**: Página inicial com boas-vindas e links para as seções do portfólio.
-- **Meu Portfólio**: Página com uma imagem de perfil, descrição sobre mim e projetos.
+- **Portfólio**: Página com uma imagem de perfil, descrição sobre mim e projetos.
 - **Jogo Senha**: Jogo de lógica "Bulls and Cows", onde você tenta adivinhar a combinação secreta com base no feedback do jogo.
+- **Filme**: Uma API que faz busca de filmes.
 
 ---
 
