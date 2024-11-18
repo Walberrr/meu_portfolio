@@ -1,10 +1,41 @@
+/* Estilos do Footer */
 .footer {
-    background-color: #ffffff;
-    color: #c51d1d;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #ffffff; /* Cor de fundo escura */
+  color: #000000; /* Texto branco */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-email {
+  text-decoration: none;
+  color: #5e72e4; /* Cor do link */
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-email:hover {
+  color: #4e61d4; /* Cor mais escura no hover */
+  transform: translateY(-3px); /* Efeito de elevação no hover */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
   }
-  
+
+  .footer-email {
+    font-size: 1rem;
+  }
+}
