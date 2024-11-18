@@ -1,41 +1,29 @@
-/* Estilos do Footer */
+/* Estilo para o Footer */
 .footer {
-  background-color: #ffffff; /* Cor de fundo escura */
-  color: #000000; /* Texto branco */
-  text-align: center;
-  padding: 20px 0;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #333; /* Cor de fundo do Footer */
+  color: white; /* Cor do texto */
+  padding: 15px; /* Padding para espaçamento */
+  text-align: center; /* Alinha o texto no centro */
+  position: fixed; /* Fixa o Footer na parte inferior */
+  bottom: 0; /* Alinha ao fundo da página */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Largura 100% */
+  z-index: 999; /* Garante que o footer fique acima de outros conteúdos */
 }
 
-.footer p {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
+/* Estilo do link de e-mail no Footer */
 .footer-email {
-  text-decoration: none;
-  color: #5e72e4; /* Cor do link */
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-top: 10px;
-  transition: color 0.3s ease, transform 0.3s ease;
+  color: #fff; /* Cor do link */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 16px; /* Tamanho da fonte */
 }
 
 .footer-email:hover {
-  color: #4e61d4; /* Cor mais escura no hover */
-  transform: translateY(-3px); /* Efeito de elevação no hover */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-@media (max-width: 768px) {
-  .footer {
-    padding: 15px;
-  }
-
-  .footer-email {
-    font-size: 1rem;
-  }
+/* Estilo do texto de direitos autorais */
+.footer p {
+  margin: 10px 0 0; /* Margem para ajustar o espaçamento */
+  font-size: 14px; /* Tamanho da fonte */
 }
