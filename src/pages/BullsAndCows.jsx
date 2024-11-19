@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BullsAndCows.css";
 
 function BullsAndCows() {
+
   const [combination, setCombination] = useState(generateCombination());
   const [attempt, setAttempt] = useState("");
   const [attempts, setAttempts] = useState([]);
@@ -10,6 +11,7 @@ function BullsAndCows() {
   const [gameOver, setGameOver] = useState(false);
 
   function generateCombination() {
+
     let digits = [];
     while (digits.length < 4) {
       const digit = Math.floor(Math.random() * 10);
@@ -21,6 +23,7 @@ function BullsAndCows() {
   }
 
   function evaluateGuess(guess) {
+    
     let bullsCount = 0;
     let cowsCount = 0;
     const guessArr = guess.split("");

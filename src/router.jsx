@@ -10,8 +10,9 @@ const router = createBrowserRouter([
     element: <Layout />,
     
     children: [
-      { path: "/", element: <Portfolio /> }, // Torne a página Portfolio a inicial
+      { path: "/", element: <Portfolio /> }, 
       { path: "/portfolio", element: <Portfolio /> },
+      
       { path: "/bulls-and-cows", element: <BullsAndCows /> },
       { path: "/movies", element: <Movies /> },
     ],
