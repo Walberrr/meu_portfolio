@@ -9,9 +9,9 @@ Você pode conferir o site online acessando:
 
 Este projeto é meu portfólio pessoal, criado para demonstrar minhas habilidades e projetos. Nele você encontrará:
 
-- **Currículo Interativo**: Seções sobre mim, experiência e habilidades.
+- **Currículo**: Seções sobre mim, experiência e habilidades.
 - **Portfólio**: Um catálogo dos meus projetos e realizações.
-- **Jogo Senha**: Uma implementação do jogo de lógica "Bulls and Cows" (Jogo Senha), criado em JavaScript, para mostrar minhas habilidades na programação.
+- **Jogo Senha**: Uma implementação do jogo de lógica "Bulls and Cows" (Jogo Senha), criado em JavaScript.
 
 ---
 
@@ -28,7 +28,7 @@ Este projeto é meu portfólio pessoal, criado para demonstrar minhas habilidade
 
 ## 🔥 Páginas
 
-- **Portfólio**: Página com uma imagem de perfil, descrição sobre mim e projetos.
+- **Portfólio**: Página com uma imagem de perfil, uma breve descrição sobre mim e minha redes de contato..
 - **Jogo Senha**: Jogo de lógica "Bulls and Cows", onde você tenta adivinhar a combinação secreta com base no feedback do jogo.
 - **Filme**: Uma API que faz busca de filmes.
 
