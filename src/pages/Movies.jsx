@@ -17,7 +17,7 @@ function Movies() {
       if (response.data.Response === "True") {
         setMovies(response.data.Search); 
       } else {
-        alert("Nenhum filme encontrado");
+        alert("Nenhum filme foi encontrado. Considere checar se ele foi digitado de forma correta");
         setMovies([]); 
       }
     } catch (error) {
@@ -30,7 +30,7 @@ function Movies() {
 
   return (
     <div className="movies-container" style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Busca de Filmes</h1>
+      <h1 style={{ color: "black" }}>API para busca de filmes</h1>
       <input
         type="text"
         placeholder="Pesquise por filmes..."
@@ -48,8 +48,8 @@ function Movies() {
         {movies.length > 0 && movies.map((movie) => (
           <div key={movie.imdbID} style={{ margin: "20px", textAlign: "center" }}>
             <img src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/200x300"} alt={movie.Title} style={{ width: "200px", height: "300px" }} />
-            <h3>{movie.Title}</h3>
-            <p>{movie.Year}</p>
+            <h3 style={{ color: "black" }}>{movie.Title}</h3>
+            <p style={{ color: "black" }}>{movie.Year}</p>
           </div>
         ))}
       </div>
