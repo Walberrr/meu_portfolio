@@ -64,11 +64,11 @@ function BullsAndCows() {
 
   return (
     <div className="bulls-cows">
-      <h2>Jogo Senha (Bulls and Cows)</h2>
-      <p>Advinhe a combinação de 4 números!</p>
+      <h2 style={{ color: "black" }}>Jogo Senha (Bulls and Cows)</h2>
+      <p style={{ color: "black" }}>Advinhe a combinação de 4 números!</p>
 
       {gameOver ? (
-        <h3>Parabéns, você acertou!</h3>
+        <h3 style={{ color: "black" }}>Parabéns, você acertou!</h3>
       ) : (
         <>
           <form onSubmit={handleSubmit}>
@@ -83,16 +83,15 @@ function BullsAndCows() {
           </form>
 
           <div className="resultados">
-            <h3>Tentativas anteriores:</h3>
+            <h3 style={{ color: "black" }}>Tentativas anteriores:</h3>
             <ul>
               {attempts.map((item, index) => (
-                <li key={index}>
+                <li style={{ color: "black" }}key={index}>
                   {item.attempt} - Bulls: {item.bulls}, Cows: {item.cows}
                 </li>
               ))}
             </ul>
           </div>
-
           <button onClick={showCombination}>Revelar combinação</button>
         </>
       )}

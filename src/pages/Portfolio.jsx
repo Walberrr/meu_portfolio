@@ -17,7 +17,7 @@ function Portfolio() {
       </div>
 
       <div className="portfolio-section">
-        <h2 className="section-title">Tecnologias que eu sei usar</h2>
+        <h2 className="section-title">Tecnologias usadas por mim</h2>
         <ul className="tech-list">
           <li>HTML</li>
           <li>CSS</li>
