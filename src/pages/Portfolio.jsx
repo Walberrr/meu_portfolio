@@ -7,8 +7,10 @@ function Portfolio() {
     <div className="portfolio-container">
       <div className="portfolio-content">
         <div className="portfolio-photo">
+
           <img src={minhaFoto} alt="Minha Foto" className="portfolio-img" />
         </div>
+        
         <h1 className="portfolio-name">Walbert Pereira de Lima</h1>
         <p className="portfolio-text">
           Olá, sou Walbert Pereira, estudante de Sistemas para Internet pela Universidade Católica de Pernambuco e atualmente estou no terceiro período. 
@@ -19,6 +21,7 @@ function Portfolio() {
       <div className="portfolio-section">
         <h2 className="section-title">Tecnologias usadas por mim</h2>
         <ul className="tech-list">
+
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
@@ -47,6 +50,7 @@ function Portfolio() {
       <div className="portfolio-section">
         <h2 className="section-title">Atividades Voluntárias</h2>
         <p>
+
           Participei como voluntário no evento <strong>Rec'n'Play</strong>, contribuindo com organização e suporte em atividades voltadas para tecnologia e inovação. 
           Além disso, estive presente na <strong>Jornada de Sistemas para Internet</strong>, auxiliando na execução de oficinas e palestras para estudantes e profissionais da área.
         </p>
